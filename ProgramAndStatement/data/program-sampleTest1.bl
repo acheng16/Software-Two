@@ -1,0 +1,29 @@
+PROGRAM JUnitTest1 IS
+
+  INSTRUCTION one IS
+     infect
+  END one
+  
+  INSTRUCTION two IS
+    turnleft
+    move
+  END two
+
+  INSTRUCTION three IS
+     turnleft
+     turnleft
+     move
+  END three
+
+BEGIN
+  WHILE next-is-enemy DO
+    one
+  END WHILE
+  WHILE next-is-not-enemy DO
+    IF next-is-wall THEN    
+	two
+    ELSE
+	three
+    END IF
+  END WHILE
+END JUnitTest1

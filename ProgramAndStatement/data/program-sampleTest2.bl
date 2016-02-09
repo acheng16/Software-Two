@@ -1,0 +1,36 @@
+PROGRAM JUnitTest2 IS
+
+  INSTRUCTION one IS
+     move
+  END one
+  
+  INSTRUCTION two IS
+     turnright
+     turnright
+     turnright
+  END two
+
+  INSTRUCTION three IS
+     turnleft
+     turnleft
+  END three
+
+  INSTRUCTION four IS
+     infect
+     turnright
+     move
+  END four
+
+BEGIN
+  WHILE random DO
+     three
+     three
+  END WHILE
+  IF next-is-wall THEN
+     three
+     one
+  END IF
+  IF next-is-enemy THEN
+     four
+  END IF
+END JUnitTest2

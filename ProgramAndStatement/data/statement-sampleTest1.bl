@@ -1,0 +1,21 @@
+WHILE next-is-wall DO
+  turnright
+  turnright
+  move
+END WHILE
+IF next-is-enemy THEN
+  infect
+END IF
+IF random THEN
+  turnleft
+  turnleft
+ELSE
+  move
+  move
+END IF
+WHILE next-is-friend DO
+  turnright
+  move
+  turnleft
+END WHILE
+move

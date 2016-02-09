@@ -1,0 +1,18 @@
+WHILE random DO
+  infect
+  turnright
+  move
+  IF true THEN
+  move
+  move
+  infect
+  ELSE
+    skip
+  END IF
+  move
+  DO next-is-friend
+    turnright
+    turnright
+  END DO
+END WHILE
+
